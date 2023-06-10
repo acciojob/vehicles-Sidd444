@@ -4,10 +4,15 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
+        //Which constructor should ?
+
         super(name,4,2,7,isManual,"Sports",2);
+
     }
 
     public void accelerate(int rate){
+
+
         int newSpeed = rate + getCurrentSpeed();
         /**
          * speed 0: gear 1
@@ -41,4 +46,6 @@ public class F1 extends Car {
             changeSpeed(newSpeed, getCurrentDirection());
         }
     }
+
+
 }
